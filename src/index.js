@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+
+//components
+import Navbar from './components/Navbar/navbar';
+import EventoList from './components/Eventos/EventoLista';
+import EventoForm from './components/Eventos/EventoForm';
+import BoletoForm from './components/Eventos/BoletoForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Navbar/>
+      <div className="container my-4 d-flex flex-row justify-content-center overflow-auto">
+        <Routes>
+          <Route exact path='/' element={<EventoList/>}></Route>
+          <Route path='/eventoForm' element={<EventoForm/>}></Route>
+          <Route path='/updateEvento/:id' element={<EventoForm/>}></Route>
+          <Route path='/boletoForm/:id' element={<BoletoForm/>}></Route>
+        </Routes>
+    
+    </div>
+    </BrowserRouter>
+    
+    
   </React.StrictMode>
 );
 

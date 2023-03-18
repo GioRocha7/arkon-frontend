@@ -1,0 +1,39 @@
+.contain-events{
+    display: block;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+}
+
+#content-list{
+    width: 80% !important;
+    /*background: #0f0c2950; 
+  background: -webkit-linear-gradient(to right, #24243e46, #302b633d, #0f0c2940); 
+  background: linear-gradient(to right, #24243e39, #302b6358, #0f0c2938); */
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 10px 5px 5px rgba(40, 40, 40, 0.356);;
+    
+    top: 20%;
+}
+#mainList{
+  position: absolute;
+  top: 10%;
+  height: 100%;
+}
+#searchText{
+  font-family: Arial, Helvetica, sans-serif;
+    color: #282649;
+}
+#headList{
+  width: 80% !important;
+  background-color: #282649;
+  color: white;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
